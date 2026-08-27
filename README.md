@@ -3,6 +3,7 @@
 An end-to-end Week 3 logistics analytics project using Python for exploratory data analysis, visualization, performance analysis, and operational recommendations.
 
 ## Objectives
+
 - Perform exploratory data analysis (EDA)
 - Analyze delivery times and delays
 - Identify transportation cost drivers
@@ -11,12 +12,15 @@ An end-to-end Week 3 logistics analytics project using Python for exploratory da
 - Produce actionable logistics recommendations
 
 ## Technologies
+
 Python • Pandas • NumPy • Matplotlib • Seaborn • Jupyter • python-docx
 
 ## Dataset
+
 The cleaned dataset contains **2,001 shipment records** and 17 variables covering shipment details, dates, shipping modes, regions, product categories, priority, distance, weight, quantity, scheduled/actual delivery, shipping cost, sales value, delays, on-time status, and cost per unit.
 
 ## Key Findings
+
 - **On-time delivery rate:** 52.2%
 - **Delayed shipments:** 47.8%
 - **Average delay among delayed shipments:** 1.50 days
@@ -26,45 +30,61 @@ The cleaned dataset contains **2,001 shipment records** and 17 variables coverin
 - Regional and shipping-mode performance varies, creating opportunities for targeted improvement.
 
 ## Visualizations
-1. Delivery-time distribution
-2. Shipping-mode performance
-3. Distance vs shipping cost
-4. Regional performance
-5. Monthly on-time trend
-6. Product-category comparison
-7. Correlation heatmap
+
+### 1. Delivery-Time Distribution
+
+![Delivery-Time Distribution](visualizations/01_delivery_distribution.png)
+
+### 2. Shipping-Mode Performance
+
+![Shipping-Mode Performance](visualizations/02_mode_performance.png)
+
+### 3. Distance vs Shipping Cost
+
+![Distance vs Shipping Cost](visualizations/03_cost_vs_distance.png)
+
+### 4. Regional Performance
+
+![Regional Performance](visualizations/04_region_performance.png)
+
+### 5. Monthly On-Time Trend
+
+![Monthly On-Time Trend](visualizations/05_monthly_trend.png)
+
+### 6. Product-Category Comparison
+
+![Product-Category Comparison](visualizations/06_category_comparison.png)
+
+### 7. Correlation Heatmap
+
+![Correlation Heatmap](visualizations/07_correlation_heatmap.png)
 
 ## Repository Structure
+
 ```text
 week3-logistics-data-analysis/
+│
 ├── data/
+│   └── Week2_Logistics_Cleaned_Data.csv
+│
 ├── notebooks/
-├── scripts/
-├── visualizations/
+│   └── Week3_Logistics_Analysis.ipynb
+│
 ├── report/
+│   └── Week3_Advanced_Logistics_Data_Analysis_Report.docx
+│
+├── scripts/
+│   └── week3_logistics_analysis.py
+│
+├── visualizations/
+│   ├── 01_delivery_distribution.png
+│   ├── 02_mode_performance.png
+│   ├── 03_cost_vs_distance.png
+│   ├── 04_region_performance.png
+│   ├── 05_monthly_trend.png
+│   ├── 06_category_comparison.png
+│   └── 07_correlation_heatmap.png
+│
 ├── README.md
 ├── requirements.txt
 └── .gitignore
-```
-
-## How to Run
-```bash
-git clone https://github.com/YOUR_USERNAME/week3-logistics-data-analysis.git
-cd week3-logistics-data-analysis
-pip install -r requirements.txt
-python scripts/week3_logistics_analysis.py
-```
-
-For the notebook:
-```bash
-jupyter notebook
-```
-
-Open `notebooks/Week3_Logistics_Analysis.ipynb`.
-
-## Report
-The complete DOC report is available under `report/`.
-
-## Author
-**Krishna Vinod**  
-B.Tech – Artificial Intelligence & Data Science
